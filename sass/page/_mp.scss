@@ -322,6 +322,8 @@ a.more {
 
 //================主題專區===============
 .theme {
+    position: relative;
+    z-index: 1;
     margin-bottom: -30px;
     padding-top: 2em;
     .container {

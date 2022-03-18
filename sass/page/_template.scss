@@ -64,37 +64,70 @@ body {
         flex-basis: 100%;
         max-width: 100%;
     }
-    .left_block {
-        flex: none;
-        flex-basis: 260px;
-        max-width: 260px;
-        margin-right: 40px;
-        &.hidden {
-            +.center_block {
-                flex: none;
-                flex-basis: 100%;
-                max-width: 100%;
-            }
-        }
-        +.center_block {
-            flex: auto;
-            flex-basis: calc(100% - 300px);
-            max-width: calc(100% - 300px);
-        }
-        @include screen('tablet') {
-            display: none;
-            +.center_block {
-                flex: none;
-                flex-basis: 100%;
-                max-width: 100%;
-            }
-        }
+    h2.title {
+        font-size: 2em;
     }
+    // .left_block {
+    //     flex: none;
+    //     flex-basis: 260px;
+    //     max-width: 260px;
+    //     margin-right: 40px;
+    //     &.hidden {
+    //         +.center_block {
+    //             flex: none;
+    //             flex-basis: 100%;
+    //             max-width: 100%;
+    //         }
+    //     }
+    //     +.center_block {
+    //         flex: auto;
+    //         flex-basis: calc(100% - 300px);
+    //         max-width: calc(100% - 300px);
+    //     }
+    //     @include screen('tablet') {
+    //         display: none;
+    //         +.center_block {
+    //             flex: none;
+    //             flex-basis: 100%;
+    //             max-width: 100%;
+    //         }
+    //     }
+    // }
     &.small_size {
         font-size: .938em;
     }
     &.large_size {
         font-size: 1.125em;
+    }
+    .innerpageBanner {
+        position: relative;
+        .img-container {
+            @include aspect-ratio(4, 1);
+        }
+        .wordcontent {
+            position: absolute;
+            top: calc(50% + 32px);
+            left: calc((100% - 1085px) / 2);
+            color: #fff;
+            max-width: 600px;
+            max-height: 74px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+            @media screen and (max-width: 1100px) {
+                left: 30px;
+            }
+            @include screen('tablet') {
+                top: calc(50% - 37px);
+            }
+            b {
+                font-size: 1.375em;
+                margin: 0 2px;
+            }
+        }
     }
 }
 

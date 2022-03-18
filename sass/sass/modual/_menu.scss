@@ -59,7 +59,7 @@
                 font-weight: bold;
                 line-height: 2.5em;
                 white-space: nowrap;
-                color: $color-word;
+                @include aSetting_nocolor;
             }
             &.hasChild {
                 >a {

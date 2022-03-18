@@ -19,6 +19,7 @@ $color-lightgray: #fcfcfc;
 $color-dark: #333333;
 $color-hr: #666; //hr顏色
 $color-title: #333333;
+$color-h1: #4e4e4e;
 $color-word: #242424; //一般字的顏色
 $color-word-light: #666666;
 $btn-word: #222; //按鈕字的顏色
@@ -27,8 +28,8 @@ $aColor: $primaryColor;
 $aHover: darken($aColor, 10);
 $aFocus:$secondaryColor;
 // 表單focus顏色
-$form-focus: #0066cc; //表單
-$form-btn: #0066cc; //表單
+$form-focus: $primaryColor; //表單
+$form-btn: $primaryColor; //表單
 //------------------------------------------------------字型--------//
 // 字型設定
 $font-family: Lato,
@@ -53,5 +54,5 @@ $screen-xs-flex: 320px !default; //極小尺寸 - flex
 //-------------------------------------------------------客製化------//
 $fatfooterBgColor: #f1f1f1; //fatFooter 底色
 //--------------------------------------------------------客製化------//
-$rounded-angle: 10px; //整站導角
+$rounded-angle: 2px; //整站導角
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99); //動態預設
