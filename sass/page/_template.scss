@@ -131,6 +131,44 @@ body {
     }
 }
 
+.album,
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    @include screen('mobile') {
+        margin: 0 -10px;
+    }
+    @include screen('xs_mobile') {
+        margin: 0;
+    }
+    .thumbnail {
+        flex-basis: calc(33.33333% - 30px);
+        margin: 0 15px 30px;
+        @include screen('tablet') {
+            flex-basis: calc(50% - 30px);
+        }
+        @include screen('mobile') {
+            flex-basis: calc(50% - 20px);
+            margin: 0 10px 20px;
+        }
+        @include screen('xs_mobile') {
+            flex-basis: 100%;
+            margin: 0 0 20px 0;
+        }
+    }
+}
+
+.video {
+    .img-container {
+        @include aspect-ratio(16, 9);
+    }
+    .video_title {
+        font-weight: normal;
+        font-size: 1em;
+    }
+}
+
 .hidden {
     display: none;
 }
