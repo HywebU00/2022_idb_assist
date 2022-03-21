@@ -170,6 +170,75 @@ table {
     }
 }
 
+.table {
+    width: 100%;
+    border-top: 4px solid $primaryColor;
+    margin-bottom: 30px;
+    table {
+        th {
+            width: auto;
+            white-space: nowrap;
+        }
+    }
+    th {
+        width: 20%;
+        text-align: right;
+        padding-right: 20px;
+    }
+    h6 {
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: $color-gray;
+            position: relative;
+            top: 1px;
+            margin-right: 5px;
+        }
+    }
+    td {
+        ul {
+            list-style: none;
+            padding-left: 19px;
+        }
+        >ul {
+            padding-left: 0;
+            >li {
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background: $color-gray;
+                    position: relative;
+                    top: 1px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        p {
+            word-break: break-word;
+        }
+        figure {
+            margin: 0;
+        }
+    }
+    @include screen('mobile') {
+        th,
+        td {
+            display: block;
+            line-height: 1.5;
+        }
+        th {
+            border-bottom: 0;
+            width: calc(100% - 30px);
+            text-align: left;
+        }
+    }
+}
+
 .table_wrapper {
     @include screen('mobile') {
         width: 100%;

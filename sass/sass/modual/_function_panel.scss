@@ -65,7 +65,7 @@ $function_color:#666;
 div.function {
     box-sizing: border-box;
     @extend %clearfix;
-    margin: .5em 0;
+    margin: .5em 0 1em 0;
     ul {
         @include li-reset;
         display: flex;
