@@ -53,13 +53,26 @@
             flex: auto;
             //min-width: 12%;
             >a {
+                position: relative;
                 display: block;
                 padding: 0 1em;
-                min-height: 2.5em;
+                min-height: 2.8em;
                 font-weight: bold;
-                line-height: 2.5em;
+                line-height: 2.8em;
                 white-space: nowrap;
+                text-align: center;
                 @include aSetting_nocolor;
+                &.here {
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 1em;
+                        bottom: 0;
+                        height: 4px;
+                        width: calc(100% - 2em);
+                        background: $primaryColor;
+                    }
+                }
             }
             &.hasChild {
                 >a {

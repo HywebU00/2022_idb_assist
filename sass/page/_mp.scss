@@ -494,26 +494,29 @@ a.more {
                 transition: .2s ease-in;
                 @include screen('mobile') {
                     padding: 50px 5px 10px 5px;
+                    background-position: center top 10px!important;
+                    background-size: 40px!important;
                 }
             }
-            &.helping a {
-                background: url(../images/icon-helping.svg) center top 20px no-repeat;
-                background-size: 60px;
-                @include screen('mobile') {
-                    background-position: center top 10px;
-                    background-size: 40px;
-                }
-            }
-            &.operation a {
-                background: url(../images/icon-prevention.svg) center top 20px no-repeat;
-                background-size: 60px;
-                @include screen('mobile') {
-                    background-position: center top 10px;
-                    background-size: 40px;
-                }
-            }
+            // &.helping a {
+            //     background: url(../images/icon-helping.svg) center top 20px no-repeat;
+            //     background-size: 60px;
+            //     @include screen('mobile') {
+            //         background-position: center top 10px;
+            //         background-size: 40px;
+            //     }
+            // }
+            // &.operation a {
+            //     background: url(../images/icon-prevention.svg) center top 20px no-repeat;
+            //     background-size: 60px;
+            //     @include screen('mobile') {
+            //         background-position: center top 10px;
+            //         background-size: 40px;
+            //     }
+            // }
             &:nth-child(1) a {
-                background-color: #ff8a00;
+                background: #ff8a00 url(../images/icon-prevention.svg) center top 20px no-repeat;
+                background-size: 60px;
                 &:hover,
                 &:focus {
                     background-color: #fff;
@@ -521,7 +524,8 @@ a.more {
                 }
             }
             &:nth-child(2) a {
-                background-color: #1d42aa;
+                background: #1d42aa url(../images/icon-helping.svg) center top 20px no-repeat;
+                background-size: 60px;
                 &:hover,
                 &:focus {
                     background-color: #fff;
