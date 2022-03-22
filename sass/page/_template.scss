@@ -123,6 +123,10 @@ body {
             @include screen('tablet') {
                 top: calc(50% - 37px);
             }
+            @include screen('mobile') {
+                left: 15px;
+                max-width: 90%;
+            }
             b {
                 font-size: 1.375em;
                 margin: 0 2px;

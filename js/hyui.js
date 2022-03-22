@@ -778,6 +778,7 @@ $(function() {
         //判斷沒有table_list
         if (
             $(this).parents('.table_list').length == 0 &&
+            $(this).parents('.table').length == 0 &&
             $(this).parents('.fix_th_table').length == 0 &&
             $(this).parent('form').length == 0
         ) {
