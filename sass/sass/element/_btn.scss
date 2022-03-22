@@ -116,6 +116,11 @@ $btn-radius:1px;
     color: lighten($color-word, 15);
 }
 
+.btn-submit,
+.btn-reset {
+    padding: 0.5em 2.5em;
+}
+
 .btn-search {
     // @extend %btn;
     @include btn_setting(lighten($primaryColor, 5), #FFF);

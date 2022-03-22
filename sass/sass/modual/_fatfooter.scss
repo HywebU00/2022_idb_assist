@@ -17,12 +17,12 @@
     .btn-fatfooter {
         font-size: .813em;
         display: block;
-        min-width: 6em;
+        width: 6em;
         color: #FFF;
         border: none;
         background: rgba(255, 255, 255, .5);
         position: absolute;
-        left: calc(50% - 2em);
+        left: calc(50% - 3em);
         z-index: 90;
         text-indent: -9999px;
         border-radius: 0;

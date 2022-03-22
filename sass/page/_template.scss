@@ -55,6 +55,7 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
+    padding-bottom: 1em;
     >.container {
         @include gutter(); //gutter 代表左右要留白
         display: flex;
@@ -174,9 +175,21 @@ body {
 }
 
 //sp1 輔導資源查詢
-// .form_categoryGrp {
-//     display: flex;
-// }
+.inner_resource_query {
+    background-image: none;
+    >.form_content {
+        >.form_grp {
+            margin-bottom: 1em;
+            .form_title {
+                font-size: 1.25em;
+            }
+        }
+    }
+    .category_title {
+        margin-bottom: .5em;
+    }
+}
+
 .hidden {
     display: none;
 }

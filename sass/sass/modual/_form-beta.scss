@@ -223,7 +223,11 @@ select::-ms-expand {
     margin: 0px .2em;
 }
 
-.form_grid {}
+.form_grid {
+    .btn_grp {
+        margin: 1em 0;
+    }
+}
 
 .flex-form {
     font-size: 100%;
