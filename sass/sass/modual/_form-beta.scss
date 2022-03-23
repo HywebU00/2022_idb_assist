@@ -403,7 +403,7 @@ select::-ms-expand {
         flex: 0 0 $form_title_width;
         align-self: flex-start;
         // padding: .65em 1em;
-        padding: .65em 0;
+        padding: .5em 0;
         font-weight: 500;
         color: darken($primaryColor, 10);
         //white-space: nowrap;
@@ -479,6 +479,7 @@ select::-ms-expand {
             margin: 0;
             padding: 0;
             border-bottom: none;
+            align-content: center;
             // 調整標題
             .form_title {
                 color: #008175;
@@ -1127,6 +1128,7 @@ select::-ms-expand {
             flex-basis: 100%;
             display: flex;
             align-items: center;
+            margin-bottom: .5em;
             input {
                 &:checked {
                     &~span {
@@ -1150,9 +1152,9 @@ select::-ms-expand {
         &.form_inline {
             label {
                 //display: inline-block;
-                margin: 0 .5em 0 0;
+                //margin: 0 .5em 0 0;
                 flex-basis: auto;
-                margin-right: 1em;
+                //margin-right: 1em;
                 display: inline-flex;
                 align-items: center;
             }
