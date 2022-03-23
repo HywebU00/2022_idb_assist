@@ -200,6 +200,37 @@ body {
     }
 }
 
+//sp2 合格登錄名單(技術分類)
+.qualified_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    .listBlock {
+        margin: 0 15px 30px;
+        flex-basis: calc(33.33333% - 30px);
+        .list_title {
+            font-size: 1.25em;
+            margin: 0 0 .5em 0;
+            color: #fff;
+            background: $primaryColor;
+            text-align: center;
+            padding: .5em;
+        }
+        ul {
+            @include li-reset;
+        }
+        li {
+            //margin-bottom: .5em;
+            border-bottom: 1px dashed $color-gray;
+        }
+        a {
+            display: block;
+            padding: .65em .5em;
+            @include aSetting_nocolor;
+        }
+    }
+}
+
 //faq 常見問題
 .faq_list {
     border-top: 2px solid $primaryColor;
@@ -222,6 +253,39 @@ body {
             color: $color-word-light;
             strong {
                 color: lighten($color-word, 5);
+            }
+        }
+    }
+}
+
+.inner_search {
+    margin: 1em 0;
+    .form_grp {
+        position: relative;
+        justify-content: flex-end;
+        label {
+            font-size: 0em;
+        }
+        input {
+            margin: 0;
+            &[type="text"] {
+                min-width: 250px;
+                padding-right: 40px;
+            }
+            &[type="submit"] {
+                font-size: 0em;
+                width: 30px !important;
+                height: 34px;
+                background: url(../images/icon/icon_search.svg) no-repeat center center;
+                background-size: 20px;
+                border: none;
+                display: block;
+                opacity: .8;
+                position: absolute;
+                right: 5px;
+                top: 2px;
+                box-shadow: none;
+                z-index: 1;
             }
         }
     }
