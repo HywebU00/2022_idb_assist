@@ -183,7 +183,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#387947, 5%);
+                    .file_type {
+                        background: darken(#387947, 5%);
+                    }
                 }
             }
             &.file_ppt,
@@ -195,7 +197,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#c55a3b, 5%);
+                    .file_type {
+                        background: darken(#c55a3b, 5%);
+                    }
                 }
             }
             &.file_pdf {
@@ -204,7 +208,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#c00, 5%);
+                    .file_type {
+                        background: darken(#c00, 5%);
+                    }
                 }
             }
             &.file_zip {
@@ -213,7 +219,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#eb712e, 5%);
+                    .file_type {
+                        background: darken(#eb712e, 5%);
+                    }
                 }
             }
             &.file_txt,
@@ -223,7 +231,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#555, 5%);
+                    .file_type {
+                        background: darken(#555, 5%);
+                    }
                 }
             }
             &.file_mov {
@@ -232,7 +242,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#009999, 5%);
+                    .file_type {
+                        background: darken(#009999, 5%);
+                    }
                 }
             }
             &.file_mp3,
@@ -242,7 +254,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#088ecc, 5%);
+                    .file_type {
+                        background: darken(#088ecc, 5%);
+                    }
                 }
             }
             &.file_jpg {
@@ -251,7 +265,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#6c29a4, 5%);
+                    .file_type {
+                        background: darken(#6c29a4, 5%);
+                    }
                 }
             }
             &.file_wmv {
@@ -260,7 +276,9 @@ h2.title {
                 }
                 &:hover,
                 &:focus {
-                    background: darken(#430a1f, 5%);
+                    .file_type {
+                        background: darken(#430a1f, 5%);
+                    }
                 }
             }
         }
