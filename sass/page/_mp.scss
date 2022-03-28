@@ -120,6 +120,7 @@ a.more {
 
 .newsBlock {
     position: relative;
+    height: 340px;
     &:nth-child(3n+1) {
         background: linear-gradient(180deg, lighten($color-gray, 10) 0%, $color-gray 100%);
         ;
@@ -167,9 +168,10 @@ a.more {
                 left: 0;
                 z-index: 3;
                 color: #fff;
-                display: flex;
+                display: block;
                 align-items: center;
                 background: rgba(50, 50, 50, 1);
+                padding: 1.5em;
             }
         }
         &:focus {
@@ -223,6 +225,9 @@ a.more {
     background: rgba(50, 50, 50, 0);
     transition: .3s ease-in;
     padding: 0 1.5em;
+    >p {
+        margin: 0 0 .5em 0;
+    }
 }
 
 //===================輔導資源查詢===============
@@ -417,6 +422,7 @@ a.more {
     }
     .itemBlock {
         margin: 0 2em;
+        height: 232px;
         >a {
             display: block;
             transition: .2s ease-in;
