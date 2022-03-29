@@ -5,40 +5,42 @@
     border-radius: 3px;
     overflow: hidden;
     transition: all .3s ease;
-    &:hover{
+    &:hover {
         box-shadow: 0 12px 3em -1em rgba(0, 0, 0, 0.5);
     }
-
     a {
         display: block;
         @include aSetting(#555);
-        position:relative;
+        position: relative;
         &:focus {
-            &:before{
-                content:"";
-                position:absolute;
+            &:before {
+                content: "";
+                position: absolute;
                 width: 100%;
                 height: 100%;
                 left: 0;
-                top:0;
-                right:0;
-                bottom:0;
+                top: 0;
+                right: 0;
+                bottom: 0;
                 z-index: 1;
-                box-shadow:0px 0px 0px 1px $aHover inset;
+                box-shadow: 0px 0px 0px 1px $aHover inset;
             }
         }
     }
     .img-container {
-        @include aspect-ratio(4, 3);
+        @include aspect-ratio(2, 1);
         margin-bottom: .5em;
+        background: #ffffff;
     }
-    h2, h3, h4 {
+    h2,
+    h3,
+    h4 {
         margin: .2em 0;
     }
     .caption {
         width: 90%;
         margin: 0 auto;
-        padding-bottom:1em;
+        padding-bottom: 1em;
     }
     .btn_grp {
         padding: .2em 0;
