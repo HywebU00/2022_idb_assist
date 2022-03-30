@@ -220,18 +220,19 @@
                     <!-- LP End -->
                     <!-- Pagination -->
                     <div class="pagination">
-                        <form action="" class="form_inline">
+                        <div class="form_inline">
                             <div class="total">
                                 共<span>98</span>筆資料，第<span>1/7</span>頁
                             </div>
-                            <select name="" id="">
+                            <label for="selectSample" class="label_hidden">每頁顯示</label>
+                            <select name="" id="selectSample" aria-label="每頁顯示">
                                 <option value="">頁每頁顯示10筆</option>
                                 <option value="">頁每頁顯示20筆</option>
                                 <option value="">頁每頁顯示30筆</option>
-                                <option value="">頁每頁顯示40</option>
+                                <option value="">頁每頁顯示40筆</option>
                             </select>
                             <input name="" type="button" value="確定">
-                        </form>
+                        </div>
                         <ul class="page">
                             <li class="first">
                                 <a href="#" title="第一頁">第一頁 </a></li>
