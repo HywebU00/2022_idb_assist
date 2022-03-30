@@ -361,7 +361,7 @@
     .wordcontent {
         max-width: 640px;
         position: absolute;
-        bottom: 15%;
+        bottom: 50px;
         left: calc((100% - 1085px) / 2);
         z-index: 1;
         color: #fff;
@@ -381,7 +381,7 @@
             height: 1px;
             width: 180px;
             position: absolute;
-            bottom: -20px;
+            bottom: -10px;
             left: 0;
             background-color: #fcfcfc;
             @include screen('mobile') {
@@ -391,17 +391,8 @@
                 bottom: -10px;
             }
         }
-        &:after {
-            content: "";
-            display: block;
-            height: 180px;
-            width: 1px;
-            position: absolute;
-            bottom: calc(100% + 20px);
-            left: 0;
-            background-color: #fcfcfc;
-        }
         .bigword {
+            position: relative;
             letter-spacing: 0.01em;
             font-weight: bold;
             font-size: 2.125em;
@@ -413,8 +404,19 @@
             @include screen('xs_mobile') {
                 font-size: 1.5em;
             }
+            &:before {
+                content: "";
+                display: block;
+                height: 180px;
+                width: 1px;
+                position: absolute;
+                bottom: calc(100% + 20px);
+                left: 0;
+                background-color: #fcfcfc;
+            }
         }
         .smallword {
+            position: relative;
             font-size: 1em;
             line-height: 1.65em;
             letter-spacing: 0.035em;
