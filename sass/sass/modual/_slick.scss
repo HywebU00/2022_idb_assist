@@ -1,10 +1,10 @@
 // slick.css
 @keyframes imgdynamic {
     0% {
-        transform: scale(1);
+        transform: scale(1.1);
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(1);
     }
 }
 
@@ -361,7 +361,7 @@
     .wordcontent {
         max-width: 640px;
         position: absolute;
-        bottom: 50px;
+        bottom: 15%;
         left: calc((100% - 1085px) / 2);
         z-index: 1;
         color: #fff;
@@ -441,7 +441,7 @@
     .slick-slide {
         &.slick-current {
             img {
-                transform: scale(1.1);
+                transform: scale(1);
                 animation-name: imgdynamic;
                 animation-duration: 5s;
             }
