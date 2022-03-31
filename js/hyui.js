@@ -124,7 +124,7 @@ $(function() {
     _nav.clone().prependTo(_mArea);
     _menu.clone().prependTo(_mArea);
     _megamenu.clone().prependTo(_mArea);
-    _search.clone().prependTo(_body).removeClass('search').addClass('m_search');
+
     var liHasChild_level1 = $('aside .menu ul').children('li.hasChild'),
         liHasChild_level2 = $('aside .menu ul ul').children('li.hasChild'),
         liHasChild_level3 = $('aside .menu ul ul ul').children('li.hasChild'),
@@ -141,6 +141,7 @@ $(function() {
             /*-----------------------------------*/
             /////////////// 手機版設定 /////////////
             /*-----------------------------------*/
+            _search.prependTo(_body).removeClass('search').addClass('m_search');
             menu_status = false;
             _sidebar.hide();
             _overlay.hide();
@@ -231,6 +232,7 @@ $(function() {
             $('.m_search').hide();
             search_mode = false;
             $('.language').find('ul').hide();
+            _search.before($("header .logo")).removeClass('m_search').addClass('search');
             // 副選單滑出
             liHasChild.on({
                 mouseenter: function() {
