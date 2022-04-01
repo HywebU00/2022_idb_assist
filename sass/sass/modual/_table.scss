@@ -47,6 +47,20 @@ table {
             background: #F5F5F5;
         }
     }
+    tr {
+        td {
+            &.counseling {
+                td {
+                    p {
+                        margin-bottom: 0;
+                        >span {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .table_list {
