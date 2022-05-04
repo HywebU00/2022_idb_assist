@@ -4,7 +4,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 999;
     transition: 0.3s ease-out;
     @extend %clearfix;
     @include screen('tablet') {
@@ -98,10 +98,10 @@
         }
     }
     .logo {
-        display: flex;
-        align-items: center;
+        //display: flex;
+        //align-items: center;
         float: left;
-        margin-bottom: .25em;
+        margin: -0.5em 0 .25em 0;
         max-width: calc(100% - 250px);
         @include screen('tablet') {
             padding: 0 60px;
@@ -118,11 +118,12 @@
         display: flex;
         align-items: center;
         //width: 400px;
-        height: 60px;
+        max-height: 60px;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         margin-right: 15px;
+        font-size: 2em;
         @include screen('tablet') {
             font-size: 1.5em;
         }
@@ -134,6 +135,7 @@
             display: inline-flex;
             align-items: center;
             color: $color-h1;
+            line-height: 1.5em;
             span {
                 white-space: nowrap;
             }
@@ -155,6 +157,7 @@
         font-size: .938em;
         color: $color-word-light;
         text-align: left;
+        letter-spacing: 0.18em;
         @include screen('mobile') {
             font-size: .8125em;
         }
