@@ -44,7 +44,7 @@ body {
     margin: 0 auto;
     background-color: $color-lightgray;
     @include screen('tablet') {
-        padding-top: 68px;
+        padding-top: 60px;
     }
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
     h2 {

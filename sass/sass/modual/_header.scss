@@ -1,15 +1,19 @@
 //header
 .header {
-    position: absolute;
+    // position: absolute;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
+    // top: 0;
+    // left: 0;
+    // z-index: 999;
     transition: 0.3s ease-out;
     @extend %clearfix;
     @include screen('tablet') {
         position: fixed;
         width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        height: 60px;
     }
     &:before {
         position: absolute;
@@ -29,7 +33,7 @@
     // mobile btn for extend
     %mobileCtrlBtn {
         width: 60px !important;
-        height: 68px !important;
+        height: 60px !important;
         position: absolute;
         top: 0px;
         display: block;
@@ -62,16 +66,16 @@
                 background: $primaryColor;
                 width: 50%;
                 height: 3px;
-                top: 24px;
+                top: 20px;
                 left: 50%;
                 margin-left: -25%;
                 display: block;
                 border-radius: 2px;
                 &:nth-child(2) {
-                    top: 32px;
+                    top: 28px;
                 }
                 &:nth-child(3) {
-                    top: 40px;
+                    top: 36px;
                 }
             }
         }
@@ -124,12 +128,13 @@
         box-sizing: border-box;
         margin-right: 15px;
         font-size: 2em;
+        // @include screen('tablet') {
+        //     font-size: 1.5em;
+        // }
         @include screen('tablet') {
-            font-size: 1.5em;
-        }
-        @include screen('mobile') {
-            font-size: 1em;
+            font-size: 1.2em;
             height: 30px;
+            margin-top: 15px;
         }
         a {
             display: inline-flex;
@@ -163,7 +168,6 @@
         }
         @include screen('xs_mobile') {
             line-height: 1.2em;
-            margin-left: 70px;
             span {
                 white-space: nowrap;
             }

@@ -232,7 +232,7 @@ $(function() {
             $('.m_search').hide();
             search_mode = false;
             $('.language').find('ul').hide();
-            _search.before($("header .logo")).removeClass('m_search').addClass('search');
+            // _search.before($("header .logo")).removeClass('m_search').addClass('search');
             // 副選單滑出
             liHasChild.on({
                 mouseenter: function() {
