@@ -344,7 +344,7 @@ $(function() {
             windowW = _window.outerWidth();
             if (windowW >= wwMedium && $(this).scrollTop() > stickyMenuTop) {
                 $('header .menu').addClass('sticky');
-                //$('.main').css('padding-top', menuH);
+                $('.main').css('padding-top', menuH);
             } else {
                 $('header .menu').removeClass('sticky');
                 $('.main').removeAttr('style');
@@ -704,7 +704,7 @@ $(function() {
         if (e.altKey && e.keyCode == 67) {
             $('html, body')
                 .stop(true, true)
-                .animate({ scrollTop: $('.main').find('.accesskey').offset().top - 70 }, 800, 'easeOutExpo');
+                .animate({ scrollTop: $('.main').find('.accesskey').offset().top - 50 }, 800, 'easeOutExpo');
             $('.main').find('.accesskey').focus();
         }
         // alt+Z footer
