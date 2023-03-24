@@ -9,8 +9,15 @@ h2.title {
 // .tt{ color: #222; }
 .cp {
   .sub_menu2 {
+    margin-bottom: 2em;
     li {
       flex-basis: calc(12.5% - 10px);
+      @include screen('mobile') {
+        flex-basis: calc(25% - 10px);
+      }
+      @include screen('xs_mobile') {
+        flex-basis: calc(50% - 10px);
+      }
       a {
         padding-bottom: 0;
         &:hover,
@@ -18,6 +25,9 @@ h2.title {
         &.active {
           .caption {
             margin-bottom: 10px;
+          }
+          &::before {
+            background: linear-gradient(180deg, rgba(24, 130, 117, 0.5) 10%, rgba(7, 87, 77, 1) 80%);
           }
           &::after {
             bottom: 8px;
@@ -34,6 +44,15 @@ h2.title {
         }
         .img-container {
           @include aspect-ratio(1.5, 1);
+          @include screen('tablet') {
+            @include aspect-ratio(1, 1);
+          }
+          @include screen('mobile') {
+            @include aspect-ratio(2, 1);
+          }
+          @include screen('xs_mobile') {
+            @include aspect-ratio(2.5, 1);
+          }
         }
         .caption {
           padding: 5px;
@@ -42,6 +61,15 @@ h2.title {
           font-size: 1rem;
           white-space: normal;
           text-overflow: initial;
+        }
+      }
+    }
+    .menu_banner {
+      max-width: 1200px;
+      .img-container {
+        @include aspect-ratio(6, 1);
+        img {
+          object-fit: cover;
         }
       }
     }
