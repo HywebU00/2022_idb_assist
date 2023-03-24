@@ -7646,7 +7646,7 @@ body.noscroll {
   padding-bottom: 1em;
 }
 .innerpage.hasbg {
-  background: url(../images/innerbg.jpg) bottom center no-repeat;
+  background: #fcfcfc url(../images/innerbg.jpg) bottom center no-repeat;
   background-size: 100% auto;
 }
 .innerpage > .container {

@@ -57,7 +57,7 @@ body {
 .innerpage {
   padding-bottom: 1em;
   &.hasbg {
-    background: url(../images/innerbg.jpg) bottom center no-repeat;
+    background: $color-lightgray url(../images/innerbg.jpg) bottom center no-repeat;
     background-size: 100% auto;
   }
   > .container {
