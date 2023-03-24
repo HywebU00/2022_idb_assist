@@ -5891,15 +5891,12 @@ table tr td.counseling td p {
   bottom: 20px;
 }
 .sub_menu2 li a:hover .caption, .sub_menu2 li a:focus .caption, .sub_menu2 li a.active .caption {
-  height: 100%;
+  bottom: 45%;
   font-weight: bold;
   font-size: 1.25em;
   line-height: 1.5;
   white-space: normal;
   text-overflow: initial;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .sub_menu2 li .img-container {
   overflow: hidden;
@@ -5943,7 +5940,7 @@ table tr td.counseling td p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: 0.3s;
+  transition: 0.3s all;
 }
 @media screen and (max-width: 767px) {
   .sub_menu2 li .caption {
@@ -8504,7 +8501,7 @@ h2.title {
   padding-bottom: 0;
 }
 .cp .sub_menu2 li a:hover .caption, .cp .sub_menu2 li a:focus .caption, .cp .sub_menu2 li a.active .caption {
-  margin-bottom: 10px;
+  bottom: 35%;
 }
 .cp .sub_menu2 li a:hover::before, .cp .sub_menu2 li a:focus::before, .cp .sub_menu2 li a.active::before {
   background: linear-gradient(180deg, rgba(24, 130, 117, 0.5) 10%, rgb(7, 87, 77) 80%);

@@ -24,7 +24,7 @@ h2.title {
         &:focus,
         &.active {
           .caption {
-            margin-bottom: 10px;
+            bottom: 35%;
           }
           &::before {
             background: linear-gradient(180deg, rgba(24, 130, 117, 0.5) 10%, rgba(7, 87, 77, 1) 80%);
