@@ -65,7 +65,7 @@
     margin: 0 -5px;
   }
   li {
-    flex-basis: calc(25% - 10px);
+    flex-basis: calc(33.33333% - 10px);
     margin: 0 5px 30px 5px;
     @include screen('mobile') {
       flex-basis: calc(50% - 10px);
@@ -129,7 +129,7 @@
       }
     }
     .img-container {
-      @include aspect-ratio(1.1, 1);
+      @include aspect-ratio(1.5, 1);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
       img {
         object-fit: cover;

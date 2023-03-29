@@ -5832,7 +5832,7 @@ table tr td.counseling td p {
   margin: 0 -5px;
 }
 .sub_menu2 li {
-  flex-basis: calc(25% - 10px);
+  flex-basis: calc(33.33333% - 10px);
   margin: 0 5px 30px 5px;
 }
 @media screen and (max-width: 767px) {
@@ -5905,7 +5905,7 @@ table tr td.counseling td p {
 .sub_menu2 li .img-container:before {
   display: inline-block;
   content: "";
-  padding-top: 90.9090909091%;
+  padding-top: 66.6666666667%;
 }
 .sub_menu2 li .img-container img {
   display: block;
@@ -8485,11 +8485,11 @@ h2.title {
   margin-bottom: 2em;
 }
 .cp .sub_menu2 li {
-  flex-basis: calc(12.5% - 10px);
+  flex-basis: calc(11.11111% - 10px);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .cp .sub_menu2 li {
-    flex-basis: calc(25% - 10px);
+    flex-basis: calc(20% - 10px);
   }
 }
 @media screen and (max-width: 575px) {
@@ -8524,7 +8524,7 @@ h2.title {
 .cp .sub_menu2 li a .img-container:before {
   display: inline-block;
   content: "";
-  padding-top: 66.6666666667%;
+  padding-top: 100%;
 }
 .cp .sub_menu2 li a .img-container img {
   display: block;
@@ -8536,48 +8536,6 @@ h2.title {
   width: 100%;
   height: 100%;
   margin: auto;
-}
-@media screen and (max-width: 991px) {
-  .cp .sub_menu2 li a .img-container {
-    overflow: hidden;
-  }
-  .cp .sub_menu2 li a .img-container:before {
-    display: inline-block;
-    content: "";
-    padding-top: 100%;
-  }
-  .cp .sub_menu2 li a .img-container img {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .cp .sub_menu2 li a .img-container {
-    overflow: hidden;
-  }
-  .cp .sub_menu2 li a .img-container:before {
-    display: inline-block;
-    content: "";
-    padding-top: 50%;
-  }
-  .cp .sub_menu2 li a .img-container img {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-  }
 }
 @media screen and (max-width: 575px) {
   .cp .sub_menu2 li a .img-container {
@@ -8617,7 +8575,7 @@ h2.title {
 .cp .sub_menu2 .menu_banner .img-container:before {
   display: inline-block;
   content: "";
-  padding-top: 16.6666666667%;
+  padding-top: 26.3157894737%;
 }
 .cp .sub_menu2 .menu_banner .img-container img {
   display: block;

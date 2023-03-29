@@ -11,9 +11,9 @@ h2.title {
   .sub_menu2 {
     margin-bottom: 2em;
     li {
-      flex-basis: calc(12.5% - 10px);
-      @include screen('mobile') {
-        flex-basis: calc(25% - 10px);
+      flex-basis: calc(11.11111% - 10px);
+      @include screen('tablet') {
+        flex-basis: calc(20% - 10px);
       }
       @include screen('xs_mobile') {
         flex-basis: calc(50% - 10px);
@@ -43,13 +43,13 @@ h2.title {
           opacity: 1;
         }
         .img-container {
-          @include aspect-ratio(1.5, 1);
-          @include screen('tablet') {
-            @include aspect-ratio(1, 1);
-          }
-          @include screen('mobile') {
-            @include aspect-ratio(2, 1);
-          }
+          @include aspect-ratio(1, 1);
+          // @include screen('tablet') {
+          //   @include aspect-ratio(1, 1);
+          // }
+          // @include screen('mobile') {
+          //   @include aspect-ratio(2, 1);
+          // }
           @include screen('xs_mobile') {
             @include aspect-ratio(2.5, 1);
           }
@@ -67,7 +67,7 @@ h2.title {
     .menu_banner {
       max-width: 1200px;
       .img-container {
-        @include aspect-ratio(6, 1);
+        @include aspect-ratio(3.8, 1);
         img {
           object-fit: cover;
         }
