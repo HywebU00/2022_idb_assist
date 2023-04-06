@@ -16,32 +16,32 @@ h2.title {
         flex-basis: calc(20% - 10px);
       }
       @include screen('xs_mobile') {
-        flex-basis: calc(50% - 10px);
+        flex-basis: calc(33.33333% - 10px);
       }
       a {
         padding-bottom: 0;
-        &:hover,
-        &:focus,
-        &.active {
-          .caption {
-            bottom: 35%;
-          }
-          &::before {
-            background: linear-gradient(180deg, rgba(24, 130, 117, 0.5) 10%, rgba(7, 87, 77, 1) 80%);
-          }
-          &::after {
-            bottom: 8px;
-          }
-        }
-        &::after {
-          width: 20px;
-          height: 20px;
-          left: calc(50% - 10px);
-          border-width: 1px;
-        }
-        &::before {
-          opacity: 1;
-        }
+        // &:hover,
+        // &:focus,
+        // &.active {
+        //   .caption {
+        //     bottom: 35%;
+        //   }
+        //   &::before {
+        //     background: linear-gradient(180deg, rgba(24, 130, 117, 0.5) 10%, rgba(7, 87, 77, 1) 80%);
+        //   }
+        //   &::after {
+        //     bottom: 8px;
+        //   }
+        // }
+        // &::after {
+        //   width: 20px;
+        //   height: 20px;
+        //   left: calc(50% - 10px);
+        //   border-width: 1px;
+        // }
+        // &::before {
+        //   opacity: 1;
+        // }
         .img-container {
           @include aspect-ratio(1, 1);
           // @include screen('tablet') {
