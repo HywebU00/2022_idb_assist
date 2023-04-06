@@ -112,7 +112,8 @@
       &:hover {
         transform: scale(1.08);
       }
-      &.active {
+      &.active,
+      &:focus {
         outline: 3px solid $primaryColor;
       }
       &:hover,

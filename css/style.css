@@ -5856,7 +5856,7 @@ table tr td.counseling td p {
 .sub_menu2 li a:hover {
   transform: scale(1.08);
 }
-.sub_menu2 li a.active {
+.sub_menu2 li a.active, .sub_menu2 li a:focus {
   outline: 3px solid #188275;
 }
 .sub_menu2 li a:hover, .sub_menu2 li a:focus, .sub_menu2 li a.active {
