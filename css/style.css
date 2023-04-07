@@ -5369,17 +5369,17 @@ table td.important {
   color: #F07743;
 }
 table th {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   color: #333;
-  border: #DDD 1px solid;
+  border: #ddd 1px solid;
   text-align: center;
   white-space: nowrap;
 }
 table.table_hover tr:hover {
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 table.table_sprite tr:nth-child(even) {
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 table tr td.counseling td p {
   margin-bottom: 0.25em;
@@ -5405,25 +5405,25 @@ table tr td.counseling td p {
     border: 1px solid #ccc;
     margin-bottom: 10px;
   }
+  .table_list tr:last-of-type {
+    margin-bottom: 0;
+  }
   .table_list td {
     border: none !important;
     border-bottom: 1px solid #eee !important;
     position: relative;
-    padding-left: 35% !important;
     white-space: normal;
     text-align: left;
+    display: flex;
   }
   .table_list td:before {
     content: attr(data-title);
-    position: absolute;
-    top: 0.5em;
-    left: 0.5em;
     width: 30%;
     padding-right: 10px;
-    white-space: nowrap;
     text-align: left;
     font-weight: bold;
     color: #000;
+    flex: 0 0 30%;
   }
 }
 .table_list.tabel_style2 th,
