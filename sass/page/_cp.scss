@@ -10,6 +10,7 @@ h2.title {
 .cp {
   .sub_menu2 {
     margin-bottom: 2em;
+
     li {
       flex-basis: calc(11.11111% - 10px);
       @include screen('tablet') {

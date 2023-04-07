@@ -5829,15 +5829,14 @@ table tr td.counseling td p {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -5px;
 }
 .sub_menu2 li {
-  flex-basis: calc(33.33333% - 10px);
-  margin: 0 5px 30px 5px;
+  flex-basis: calc(33.33333% - 20px);
+  margin: 0 10px 30px;
 }
 @media screen and (max-width: 767px) {
   .sub_menu2 li {
-    flex-basis: calc(50% - 10px);
+    flex-basis: calc(50% - 20px);
   }
 }
 @media screen and (max-width: 575px) {
@@ -5850,7 +5849,6 @@ table tr td.counseling td p {
   display: flex;
   border-radius: 2px;
   overflow: hidden;
-  padding-bottom: 48px;
   transition: 0.3s;
 }
 .sub_menu2 li a:hover {

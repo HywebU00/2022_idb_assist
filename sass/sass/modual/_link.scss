@@ -62,13 +62,13 @@
     @include li-reset;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -5px;
+    //margin: 0 -5px;
   }
   li {
-    flex-basis: calc(33.33333% - 10px);
-    margin: 0 5px 30px 5px;
+    flex-basis: calc(33.33333% - 20px);
+    margin: 0 10px 30px;
     @include screen('mobile') {
-      flex-basis: calc(50% - 10px);
+      flex-basis: calc(50% - 20px);
     }
     @include screen('xs_mobile') {
       flex-basis: 100%;
@@ -79,7 +79,6 @@
       border-radius: 2px;
       overflow: hidden;
       //background: $primaryColor linear-gradient(180deg, rgba(255, 255, 255, 1) 72%, rgba(24, 130, 117, 1) 100%);
-      padding-bottom: 48px;
       transition: 0.3s;
       // &::before {
       //   content: '';
