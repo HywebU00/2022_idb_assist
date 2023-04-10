@@ -8502,7 +8502,12 @@ h2.title {
      object-fit: cover;
 }
 .cp .album {
-  margin: 2em -15px;
+  margin: 2em 200px;
+}
+@media screen and (max-width: 991px) {
+  .cp .album {
+    margin: 2em 50px;
+  }
 }
 @media screen and (max-width: 767px) {
   .cp .album {
@@ -8510,12 +8515,7 @@ h2.title {
   }
 }
 .cp .album .thumbnail {
-  flex-basis: calc(50% - 30px);
-}
-@media screen and (max-width: 767px) {
-  .cp .album .thumbnail {
-    flex-basis: 100%;
-  }
+  flex-basis: 100%;
 }
 .cp .album .thumbnail .img-container {
   margin-bottom: 0;
