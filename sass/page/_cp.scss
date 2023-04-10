@@ -9,9 +9,9 @@ h2.title {
 // .tt{ color: #222; }
 .cp {
   .sub_menu2 {
-    margin-bottom: 2em;
-
+    margin: 0 0 2em 0;
     li {
+      margin: 0 5px 10px;
       flex-basis: calc(11.11111% - 10px);
       @include screen('tablet') {
         flex-basis: calc(20% - 10px);
@@ -71,6 +71,39 @@ h2.title {
         @include aspect-ratio(3.8, 1);
         img {
           object-fit: cover;
+        }
+      }
+    }
+  }
+  .album {
+    margin: 2em -15px;
+    .thumbnail {
+      flex-basis: calc(50% - 30px);
+      .img-container {
+        margin-bottom: 0;
+      }
+      &.download {
+        a {
+          &::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 30px);
+            bottom: 35px;
+            z-index: 1;
+            background: $primaryColor url(../images/icon/icon_download2.svg) no-repeat center;
+            background-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+          }
+          &:hover {
+            &:after {
+              transform: translateY(5px);
+            }
+          }
         }
       }
     }

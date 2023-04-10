@@ -5823,6 +5823,19 @@ table tr td.counseling td p {
   color: #188275;
 }
 
+.sub_menu2 {
+  margin: 0 150px;
+}
+@media screen and (max-width: 991px) {
+  .sub_menu2 {
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sub_menu2 {
+    margin: 0;
+  }
+}
 .sub_menu2 ul {
   margin: 0;
   padding: 0;
@@ -5837,11 +5850,6 @@ table tr td.counseling td p {
 @media screen and (max-width: 767px) {
   .sub_menu2 li {
     flex-basis: calc(50% - 20px);
-  }
-}
-@media screen and (max-width: 575px) {
-  .sub_menu2 li {
-    flex-basis: 100%;
   }
 }
 .sub_menu2 li a {
@@ -8400,9 +8408,10 @@ h2.title {
 }
 
 .cp .sub_menu2 {
-  margin-bottom: 2em;
+  margin: 0 0 2em 0;
 }
 .cp .sub_menu2 li {
+  margin: 0 5px 10px;
   flex-basis: calc(11.11111% - 10px);
 }
 @media screen and (max-width: 991px) {
@@ -8491,6 +8500,33 @@ h2.title {
 .cp .sub_menu2 .menu_banner .img-container img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.cp .album {
+  margin: 2em -15px;
+}
+.cp .album .thumbnail {
+  flex-basis: calc(50% - 30px);
+}
+.cp .album .thumbnail .img-container {
+  margin-bottom: 0;
+}
+.cp .album .thumbnail.download a::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: 35px;
+  z-index: 1;
+  background: #188275 url(../images/icon/icon_download2.svg) no-repeat center;
+  background-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.cp .album .thumbnail.download a:hover:after {
+  transform: translateY(5px);
 }
 .cp .pic {
   float: left;
