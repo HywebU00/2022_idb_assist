@@ -77,8 +77,14 @@ h2.title {
   }
   .album {
     margin: 2em -15px;
+    @include screen('mobile') {
+      margin: 2em 0;
+    }
     .thumbnail {
       flex-basis: calc(50% - 30px);
+      @include screen('mobile') {
+        flex-basis: 100%;
+      }
       .img-container {
         margin-bottom: 0;
       }

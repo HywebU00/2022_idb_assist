@@ -8504,8 +8504,18 @@ h2.title {
 .cp .album {
   margin: 2em -15px;
 }
+@media screen and (max-width: 767px) {
+  .cp .album {
+    margin: 2em 0;
+  }
+}
 .cp .album .thumbnail {
   flex-basis: calc(50% - 30px);
+}
+@media screen and (max-width: 767px) {
+  .cp .album .thumbnail {
+    flex-basis: 100%;
+  }
 }
 .cp .album .thumbnail .img-container {
   margin-bottom: 0;
