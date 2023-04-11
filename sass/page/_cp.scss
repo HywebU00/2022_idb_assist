@@ -83,35 +83,43 @@ h2.title {
     @include screen('mobile') {
       margin: 2em 0;
     }
-    .thumbnail {
-      flex-basis: 100%;
-      .img-container {
-        margin-bottom: 0;
-      }
-      &.download {
-        a {
-          &::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            position: absolute;
-            left: calc(50% - 30px);
-            bottom: 35px;
-            z-index: 1;
-            background: $primaryColor url(../images/icon/icon_download2.svg) no-repeat center;
-            background-size: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: 0.3s;
-          }
-          &:hover {
-            &:after {
-              transform: translateY(5px);
-            }
+  }
+  .mediaBlock {
+    position: relative;
+    margin: 2em auto;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    &.download {
+      a {
+        &::after {
+          content: '';
+          display: block;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          position: absolute;
+          left: calc(50% - 30px);
+          bottom: 35px;
+          z-index: 1;
+          background: $primaryColor url(../images/icon/icon_download2.svg) no-repeat center;
+          background-size: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          transition: 0.3s;
+        }
+        &:hover {
+          &:after {
+            transform: translateY(5px);
           }
         }
+        > img {
+          max-width: 100%;
+          height: auto;
+        }
       }
+    }
+    .img-container {
+      @include aspect-ratio(16, 9);
     }
   }
   .pic {

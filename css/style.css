@@ -8514,13 +8514,14 @@ h2.title {
     margin: 2em 0;
   }
 }
-.cp .album .thumbnail {
-  flex-basis: 100%;
+.cp .mediaBlock {
+  position: relative;
+  margin: 2em auto;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
 }
-.cp .album .thumbnail .img-container {
-  margin-bottom: 0;
-}
-.cp .album .thumbnail.download a::after {
+.cp .mediaBlock.download a::after {
   content: "";
   display: block;
   width: 60px;
@@ -8535,8 +8536,31 @@ h2.title {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
-.cp .album .thumbnail.download a:hover:after {
+.cp .mediaBlock.download a:hover:after {
   transform: translateY(5px);
+}
+.cp .mediaBlock.download a > img {
+  max-width: 100%;
+  height: auto;
+}
+.cp .mediaBlock .img-container {
+  overflow: hidden;
+}
+.cp .mediaBlock .img-container:before {
+  display: inline-block;
+  content: "";
+  padding-top: 56.25%;
+}
+.cp .mediaBlock .img-container img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 .cp .pic {
   float: left;
