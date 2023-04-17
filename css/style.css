@@ -362,7 +362,7 @@ th {
 .cp p {
   font-size: 1em;
   line-height: 1.85em;
-  margin-top: 0;
+  margin: 0 0 0.5em 0;
 }
 .cp ul,
 .cp ol {
@@ -5836,12 +5836,19 @@ table tr td.counseling td p {
     margin: 0;
   }
 }
+.sub_menu2 .bannerBlock {
+  margin-bottom: 1em;
+}
+.sub_menu2 .bannerBlock a {
+  display: block;
+}
 .sub_menu2 ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -10px;
 }
 .sub_menu2 li {
   flex-basis: calc(33.33333% - 20px);

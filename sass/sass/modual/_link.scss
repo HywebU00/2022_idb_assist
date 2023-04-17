@@ -65,11 +65,17 @@
   @include screen('mobile') {
     margin: 0;
   }
+  .bannerBlock {
+    margin-bottom: 1em;
+    a {
+      display: block;
+    }
+  }
   ul {
     @include li-reset;
     display: flex;
     flex-wrap: wrap;
-    //margin: 0 -5px;
+    margin: 0 -10px;
   }
   li {
     flex-basis: calc(33.33333% - 20px);
