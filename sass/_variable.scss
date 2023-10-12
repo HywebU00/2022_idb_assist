@@ -3,8 +3,8 @@
 //---------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
 $primaryColor: #188275; //主色
-$secondaryColor: #F07743; //輔色
-$lightColor: #B3E7BB; //點綴
+$secondaryColor: #f07743; //輔色
+$lightColor: #b3e7bb; //點綴
 $linkColor: #0066cc; //連結
 $importantColor: #eb0202; //重要
 // 但注意真實顏色與語意的關聯必須易於辨識
@@ -26,19 +26,13 @@ $btn-word: #222; //按鈕字的顏色
 // 連結顏色
 $aColor: $primaryColor;
 $aHover: darken($aColor, 10);
-$aFocus:$secondaryColor;
+$aFocus: $secondaryColor;
 // 表單focus顏色
 $form-focus: $primaryColor; //表單
 $form-btn: $primaryColor; //表單
 //------------------------------------------------------字型--------//
 // 字型設定
-$font-family: Lato,
-'PingFang TC',
-'Helvetica Neue',
-Helvetica,
-微軟正黑體,
-Arial,
-sans-serif;
+$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
 $font-size: 1em;
 //------------------------------------------------------格線系統-----//
 // 格線系統

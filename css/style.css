@@ -401,7 +401,7 @@ th {
 
 a:focus {
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 inset;
+  box-shadow: 0 0px 0px 2px #f07743 inset;
 }
 @media screen and (max-width: 767px) {
   a:focus {
@@ -444,7 +444,7 @@ a.goCenter {
   padding: 0 0.5em;
   height: 2em;
   line-height: 2em;
-  background: #F07743;
+  background: #f07743;
   color: #fff;
   text-decoration: none;
   z-index: 999999999999;
@@ -631,7 +631,7 @@ br {
 }
 
 .gs-webResult div.gs-visibleUrl {
-  color: #F07743 !important;
+  color: #f07743 !important;
 }
 
 .gsc-search-button.gsc-search-button-v2 {
@@ -873,7 +873,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn.active {
   background: #ededed;
@@ -902,7 +902,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn-green.active {
   background: #2f9b2f;
@@ -927,7 +927,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn-blue.active {
   background: #0073e6;
@@ -952,7 +952,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn-yellow.active {
   background: #fecd36;
@@ -977,7 +977,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn-orange.active {
   background: #ea4d00;
@@ -1002,7 +1002,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn-red.active {
   background: #ed0000;
@@ -1027,7 +1027,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn-purple.active {
   background: #a029a2;
@@ -1052,7 +1052,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn-submit.active {
   background: #20ad9c;
@@ -1086,7 +1086,7 @@ kbd kbd {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .btn-search.active {
   background: #20ad9c;
@@ -2397,14 +2397,14 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .search .form_grp input[type=submit] {
   min-width: auto;
   padding: 0.5em 1.5em;
-  background-color: #F07743;
+  background-color: #f07743;
   box-shadow: none;
 }
 .search .form_grp input[type=submit]:hover, .search .form_grp input[type=submit]:focus {
   background-color: #d54c11;
 }
 .search .form_grp input:focus {
-  box-shadow: 0 0px 0px 2px #F07743;
+  box-shadow: 0 0px 0px 2px #f07743;
 }
 .search .form_grp button,
 .search .form_grp .btn,
@@ -3115,7 +3115,7 @@ footer {
   padding: 2em 0 0 0;
   color: #575757;
   background: #fcfcfc;
-  border-bottom: 6px solid #B3E7BB;
+  border-bottom: 6px solid #b3e7bb;
 }
 footer:before, footer:after {
   content: "";
@@ -5227,7 +5227,7 @@ input[type=checkbox]:focus {
   cursor: pointer;
   color: #FFF;
   outline: none;
-  box-shadow: 0 0px 0px 2px #F07743 !important;
+  box-shadow: 0 0px 0px 2px #f07743 !important;
 }
 .upload_grp .upload_btn.active {
   background: #1c9888;
@@ -5366,7 +5366,7 @@ table td a {
   word-break: break-word;
 }
 table td.important {
-  color: #F07743;
+  color: #f07743;
 }
 table th {
   background-color: #f3f3f3;
@@ -5934,10 +5934,10 @@ table tr td.counseling td p {
 }
 
 .example-2 .tabItem:hover {
-  background: #F07743;
+  background: #f07743;
 }
 .example-2 .tabItem.active {
-  background: #F07743;
+  background: #f07743;
 }
 
 .active + .tabContent {
@@ -6255,7 +6255,7 @@ table tr td.counseling td p {
   right: 0;
   bottom: 0;
   z-index: 99;
-  box-shadow: 0px 0px 0px 2px #F07743 inset;
+  box-shadow: 0px 0px 0px 2px #f07743 inset;
 }
 
 /* ---箭頭的樣式--- */
@@ -6282,7 +6282,7 @@ table tr td.counseling td p {
 .slick-next:focus {
   border: none !important;
   outline: none;
-  box-shadow: 0px 0px 0px 2px #F07743 inset;
+  box-shadow: 0px 0px 0px 2px #f07743 inset;
 }
 
 /* 上一則 位置 圖片*/
@@ -6375,7 +6375,7 @@ table tr td.counseling td p {
 .slick-dots li button:focus {
   opacity: 1;
   /* 點focus的顏色 */
-  background: #F07743;
+  background: #f07743;
 }
 .slick-dots li.slick-active button {
   opacity: 1;
@@ -7864,9 +7864,8 @@ a.more {
   height: 2.5em;
   line-height: 2.5;
   color: #fff;
-  background-color: #F07743;
+  background-color: #f07743;
   overflow: hidden;
-  vertical-align: middle;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
@@ -7877,7 +7876,7 @@ a.more:after {
   content: "";
   width: 6px;
   height: 6px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   transform: rotate(45deg);
   position: absolute;
   right: -10px;
@@ -7981,7 +7980,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   background: linear-gradient(180deg, #e6e6e6 0%, #ccc 100%);
 }
 .newsBlock:nth-child(3n+2) {
-  background-color: #B3E7BB;
+  background-color: #b3e7bb;
 }
 .newsBlock:nth-child(3n+3) {
   background: linear-gradient(180deg, #188275 0%, #10574e 100%);
@@ -8003,10 +8002,10 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   transition: 0.2s ease-in;
 }
 .newsBlock .textContent:focus .news_text {
-  box-shadow: 0 0px 0px 2px #F07743 inset;
+  box-shadow: 0 0px 0px 2px #f07743 inset;
 }
 .newsBlock .newTag {
-  background-color: #F07743;
+  background-color: #f07743;
   color: #fff;
   padding: 0 0.8em;
   position: absolute;
@@ -8058,7 +8057,6 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 .resource_query {
   position: relative;
   padding-top: 3em;
-  background: url(../images/bg2.jpg) center no-repeat;
 }
 .resource_query:before {
   content: "";
@@ -8212,7 +8210,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   background-size: cover;
 }
 .themeBlock:last-child {
-  background: linear-gradient(180deg, #B3E7BB 0%, #79d587 100%);
+  background: linear-gradient(180deg, #b3e7bb 0%, #79d587 100%);
 }
 .themeBlock:last-child .theme_title {
   border-color: #188275;
