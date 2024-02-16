@@ -361,7 +361,7 @@ th {
 }
 .cp p {
   font-size: 1em;
-  line-height: 1.85em;
+  line-height: 1.85em !important;
   margin: 0;
 }
 .cp ul,
@@ -8623,6 +8623,17 @@ h2.title {
 }
 .cp table {
   background: #fff;
+  font-size: 1rem !important;
+}
+.cp table p,
+.cp table span {
+  font-size: 1rem !important;
+}
+.cp table p p,
+.cp table p span,
+.cp table span p,
+.cp table span span {
+  font-size: 1rem !important;
 }
 .cp img.float_left {
   float: left;
