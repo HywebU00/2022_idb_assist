@@ -7740,8 +7740,7 @@ body.noscroll {
   background-image: none;
 }
 .inner_resource_query .btn-submit {
-  font-size: 1.125rem;
-  padding: 0.5em 2.5em;
+  padding: 0.5em 2.8em;
 }
 .inner_resource_query > .form_content > .form_grp {
   margin-bottom: 1em;
