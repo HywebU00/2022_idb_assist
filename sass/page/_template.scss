@@ -303,6 +303,52 @@ body {
   }
 }
 
+.floatLink {
+  position: fixed;
+  left: 0;
+  top: 170px;
+  z-index: 99;
+  transition: 0.3s;
+  //background-color: rgba(#188275, 0.7);
+  //border-radius: 0 0 5px 0;
+  padding: 5px;
+  &.close {
+    left: -115px;
+    .collapseBtn {
+      &::before {
+        transform: rotate(135deg);
+        right: 8px;
+      }
+    }
+  }
+  a {
+    display: flex;
+  }
+  .collapseBtn {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 100%;
+    bottom: 10px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 7px;
+      right: 4px;
+      width: 10px;
+      height: 10px;
+      border-top: 3px solid #188275;
+      border-left: 3px solid #188275;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 .hidden {
   display: none;
 }
