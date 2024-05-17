@@ -14,7 +14,7 @@ $(function () {
   $('.mpSlider').slick({
     mobileFirst: false,
     dots: true,
-    arrows: false,
+    arrows: true,
     infinite: true,
     speed: 500,
     autoplay: false,
