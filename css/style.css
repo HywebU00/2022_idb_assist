@@ -110,7 +110,7 @@ img {
 }
 
 .Flex-set .col {
-  margin: 4px 0;
+  margin: 10px 0;
 }
 .Flex-set .col p {
   color: rgba(255, 255, 255, 0.5);
@@ -309,8 +309,8 @@ img {
 .flex-6-6 .col {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-sizing: border-box;
 }
 @media (min-width: 320px) {

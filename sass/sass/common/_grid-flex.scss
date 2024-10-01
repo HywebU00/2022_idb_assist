@@ -20,7 +20,7 @@ $m-gutter: 4px;
 
   // sampl樣式設定
   .col {
-    margin: 4px 0;
+    margin: 10px 0;
     p {
       color: rgba(255, 255, 255, 0.5);
     }
@@ -90,7 +90,7 @@ $m-gutter: 4px;
     @include flex-sm(12, $m-gutter);
     @include flex-md(6, $m-gutter);
     @include flex-lg(6, $m-gutter);
-    @include gutter();
+    @include gutter(20px);
   }
 }
 
