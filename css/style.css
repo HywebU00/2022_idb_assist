@@ -6468,6 +6468,7 @@ table tr td.counseling td p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 -10px;
 }
 .sub_menu3 ul li {
   flex-basis: calc(33.33333% - 20px);
@@ -6481,7 +6482,6 @@ table tr td.counseling td p {
 @media screen and (max-width: 575px) {
   .sub_menu3 ul li {
     flex: 0 1 100%;
-    margin: 0 0 20px;
   }
 }
 .sub_menu3 ul li a {
@@ -6512,6 +6512,7 @@ table tr td.counseling td p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 -10px;
 }
 .sub_menu4 ul li {
   flex-basis: calc(50% - 20px);
@@ -6520,7 +6521,6 @@ table tr td.counseling td p {
 @media screen and (max-width: 575px) {
   .sub_menu4 ul li {
     flex: 0 1 100%;
-    margin: 0 0 20px;
   }
 }
 .sub_menu4 ul li a {
