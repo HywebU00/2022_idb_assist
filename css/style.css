@@ -3847,6 +3847,13 @@ footer .footer_icon a:focus:after {
 footer .footer_icon img {
   max-width: 120px;
 }
+footer .tel_link {
+  display: inline-block;
+  width: 230px;
+}
+footer .tel_link img {
+  width: 100%;
+}
 
 .fatfooter {
   overflow: hidden;
@@ -7733,8 +7740,6 @@ table tr td.counseling td p {
   margin: 0.2em 0;
   padding: 0.5em 0 0.5em;
   min-height: 35px;
-  border-top: 1px solid #DDD;
-  border-bottom: 1px solid #DDD;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -7756,6 +7761,10 @@ table tr td.counseling td p {
 }
 .function_panel .function {
   flex: 0 0 auto;
+}
+.function_panel:has(> .publish_time) {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .function_panel .publish_time {
   flex: 1 1 auto;
@@ -7823,7 +7832,7 @@ div.function ul li a {
   padding: 0.4em 1em;
   background: #188275;
   border-color: #188275;
-  color: #FFF;
+  color: #fff;
 }
 div.function ul li button:hover, div.function ul li button:focus,
 div.function ul li a:hover,
@@ -7873,13 +7882,13 @@ div.function ul li.icon_search a:before {
   text-align: center;
   line-height: 32px;
   border-radius: 50%;
-  background: #F1F1F1;
+  background: #f1f1f1;
   text-indent: -9999px;
   position: relative;
 }
 .function_panel .function ul li a:hover, .function_panel .function ul li a:focus {
   background: #10574e;
-  color: #FFF;
+  color: #fff;
 }
 .function_panel .function ul li a:hover:before, .function_panel .function ul li a:focus:before {
   filter: invert(100%);
