@@ -3848,11 +3848,27 @@ footer .footer_icon img {
   max-width: 120px;
 }
 footer .tel_link {
-  display: inline-block;
-  width: 230px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5em 1em;
+  background: #188275;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 2px;
+  vertical-align: middle;
+  transition: 0.2s ease-in;
 }
-footer .tel_link img {
-  width: 100%;
+footer .tel_link::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background: url(../images/icon/icon_phone2.svg) no-repeat center center;
+}
+footer .tel_link:hover {
+  color: #fff;
+  background-color: #10574e;
 }
 
 .fatfooter {

@@ -154,10 +154,26 @@ footer {
     }
   }
   .tel_link {
-    display: inline-block;
-    width: 230px;
-    img {
-      width: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    background: $primaryColor;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 2px;
+    vertical-align: middle;
+    transition: 0.2s ease-in;
+    &::before {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 14px;
+      margin-right: 3px;
+      background: url(../images/icon/icon_phone2.svg) no-repeat center center;
+    }
+    &:hover {
+      color: #fff;
+      background-color: $aHover;
     }
   }
 }
