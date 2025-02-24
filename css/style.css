@@ -3866,7 +3866,7 @@ footer .tel_link::before {
   margin-right: 3px;
   background: url(../images/icon/icon_phone2.svg) no-repeat center center;
 }
-footer .tel_link:hover {
+footer .tel_link:hover, footer .tel_link:focus {
   color: #fff;
   background-color: #10574e;
 }

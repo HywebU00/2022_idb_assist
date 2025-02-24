@@ -171,7 +171,8 @@ footer {
       margin-right: 3px;
       background: url(../images/icon/icon_phone2.svg) no-repeat center center;
     }
-    &:hover {
+    &:hover,
+    &:focus {
       color: #fff;
       background-color: $aHover;
     }
