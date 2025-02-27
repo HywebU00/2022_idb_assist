@@ -9236,6 +9236,9 @@ h2.title {
     margin: 2em 0;
   }
 }
+.cp a:has(> img):focus-visible {
+  outline: 2px solid #f07743;
+}
 .cp .mediaBlock {
   position: relative;
   margin: 1em auto;

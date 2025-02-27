@@ -84,6 +84,13 @@ h2.title {
       margin: 2em 0;
     }
   }
+  a {
+    &:has(> img) {
+      &:focus-visible {
+        outline: 2px solid $aFocus;
+      }
+    }
+  }
   .mediaBlock {
     position: relative;
     margin: 1em auto;
