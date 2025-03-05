@@ -27,8 +27,11 @@ $(function () {
   /*-----------------------------------*/
   ////////////// 行動版選單切換////////////
   /*-----------------------------------*/
-  _body.prepend('<aside class="sidebar"><div class="m_area"><button type="button" class="sidebarClose">關閉</button></div><div class="menu_overlay"></div></aside>');
-  $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><button type="button" class="searchCtrl">查詢</button>');
+  // _body.prepend('<aside class="sidebar"><div class="m_area"><button type="button" class="sidebarClose">關閉</button></div><div class="menu_overlay"></div></aside>');
+
+  $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button>');
+  $('header .container').append('<button type="button" class="searchCtrl">搜尋</button>');
+  $('.sidebarCtrl').after('<aside class="sidebar"><div class="m_area"><button type="button" class="sidebarClose">關閉</button></div><div class="menu_overlay"></div></aside>');
   var menu_status = false,
     _sidebar = $('.sidebar'),
     _search = $('.search'),
@@ -38,6 +41,7 @@ $(function () {
     _overlay = $('.menu_overlay'),
     _mArea = $('.m_area');
   _sidebarCtrl.append('<span></span><span></span><span></span>');
+
   //---------------
 
   // if (ww <= wwSmall) {
@@ -137,7 +141,7 @@ $(function () {
       /*-----------------------------------*/
       /////////////// 手機版設定 /////////////
       /*-----------------------------------*/
-      _search.prependTo(_body).removeClass('search').addClass('m_search');
+      _search.appendTo('header .container').removeClass('search').addClass('m_search');
       menu_status = false;
       _sidebar.hide();
       _overlay.hide();

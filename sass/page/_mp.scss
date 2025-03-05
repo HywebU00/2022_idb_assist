@@ -111,6 +111,9 @@ a.more {
     position: absolute;
     right: 80px;
     top: 1em;
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $primaryColor;
+    }
     @include screen('xs_mobile') {
       right: 30px;
     }
