@@ -521,34 +521,34 @@ select::-ms-expand {
     }
   }
   // 選單格線系統
-  // [class*="form_col"] {
-  //     flex-basis: 100%;
-  //     max-width: 100%;
-  //     align-items: flex-start;
-  //     //justify-content: space-around;
-  //     @include gutter(0);
-  //     >.form_grp {
-  //         border-bottom: 0;
-  //         padding-top: 0;
-  //         //margin: 0;
-  //     }
-  //     // >input,
-  //     // >select,
-  //     // >label{
-  //     //     margin: .3em 0;
-  //     // }
-  //     label {
-  //         @include gutter(.6em);
-  //         padding-top: 5px;
-  //         // &.label_hidden{
-  //         //     width: 0;
-  //         //     flex-basis: 0;
-  //         // }
-  //     }
-  //     @include screen('mobile') {
-  //         @include gutter();
-  //     }
-  // }
+  [class*='form_col'] {
+    flex-basis: 100%;
+    max-width: 100%;
+    align-items: flex-start;
+    //justify-content: space-around;
+    @include gutter(0);
+    > .form_grp {
+      border-bottom: 0;
+      padding-top: 0;
+      //margin: 0;
+    }
+    // >input,
+    // >select,
+    // >label{
+    //     margin: .3em 0;
+    // }
+    label {
+      @include gutter(0.6em);
+      padding-top: 5px;
+      // &.label_hidden{
+      //     width: 0;
+      //     flex-basis: 0;
+      // }
+    }
+    @include screen('mobile') {
+      @include gutter();
+    }
+  }
   // // 引用 Flex grid system
   // // 父層設定 - 均分
   // .flex-col-equal-1,
@@ -593,83 +593,83 @@ select::-ms-expand {
   //         @include flex-lg-equal(4, $m-gutter);
   //     }
   // }
-  // .form_col-6-6 {
-  //     >.form_grp {
-  //         width: 50%;
-  //         flex-basis: 50%;
-  //         max-width: 50%;
-  //         @include screen('xs_mobile') {
-  //             width: 100%;
-  //             flex-basis: 100%;
-  //             max-width: 100%;
-  //         }
-  //     }
-  //     >input,
-  //     >select,
-  //     >label {
-  //         width: calc(50% - .6em);
-  //         flex-basis: calc(50% - .6em);
-  //         max-width: calc(50% - .6em);
-  //         @include screen('xs_mobile') {
-  //             width: calc(100% - .6em);
-  //             flex-basis: calc(100% - .6em);
-  //             max-width: calc(100% - .6em);
-  //         }
-  //     }
-  // }
-  // .form_col-4-4-4 {
-  //     >.form_grp {
-  //         width: calc(100% * 0.33333);
-  //         flex-basis: calc(100% * 0.33333);
-  //         max-width: calc(100% * 0.33333);
-  //         @include screen('xs_mobile') {
-  //             width: 100%;
-  //             flex-basis: 100%;
-  //             max-width: 100%;
-  //         }
-  //     }
-  //     >input,
-  //     >select,
-  //     >label {
-  //         width: calc(100% * 0.33333 - .6em);
-  //         flex-basis: calc(100% * 0.33333 - .6em);
-  //         max-width: calc(100% * 0.33333 - .6em);
-  //         @include screen('xs_mobile') {
-  //             width: calc(100% - .6em);
-  //             flex-basis: calc(100% - .6em);
-  //             max-width: calc(100% - .6em);
-  //         }
-  //     }
-  // }
-  // .form_col-3-3-3-3 {
-  //     >.form_grp {
-  //         width: 25%;
-  //         flex-basis: 25%;
-  //         max-width: 25%;
-  //         @include screen('mobile') {
-  //             width: 50%;
-  //             flex-basis: 50%;
-  //             max-width: 50%;
-  //         }
-  //         @include screen('xs_mobile') {
-  //             width: 100%;
-  //             flex-basis: 100%;
-  //             max-width: 100%;
-  //         }
-  //     }
-  //     >input,
-  //     >select,
-  //     >label {
-  //         width: calc(25% - .6em);
-  //         flex-basis: calc(25% - .6em);
-  //         max-width: calc(25% - .6em);
-  //         @include screen('xs_mobile') {
-  //             width: calc(100% - .6em);
-  //             flex-basis: calc(100% - .6em);
-  //             max-width: calc(100% - .6em);
-  //         }
-  //     }
-  // }
+  .form_col-6-6 {
+    > .form_grp {
+      width: 50%;
+      flex-basis: 50%;
+      max-width: 50%;
+      @include screen('xs_mobile') {
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    > input,
+    > select,
+    > label {
+      width: calc(50% - 0.6em);
+      flex-basis: calc(50% - 0.6em);
+      max-width: calc(50% - 0.6em);
+      @include screen('xs_mobile') {
+        width: calc(100% - 0.6em);
+        flex-basis: calc(100% - 0.6em);
+        max-width: calc(100% - 0.6em);
+      }
+    }
+  }
+  .form_col-4-4-4 {
+    > .form_grp {
+      width: calc(100% * 0.33333);
+      flex-basis: calc(100% * 0.33333);
+      max-width: calc(100% * 0.33333);
+      @include screen('xs_mobile') {
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    > input,
+    > select,
+    > label {
+      width: calc(100% * 0.33333 - 0.6em);
+      flex-basis: calc(100% * 0.33333 - 0.6em);
+      max-width: calc(100% * 0.33333 - 0.6em);
+      @include screen('xs_mobile') {
+        width: calc(100% - 0.6em);
+        flex-basis: calc(100% - 0.6em);
+        max-width: calc(100% - 0.6em);
+      }
+    }
+  }
+  .form_col-3-3-3-3 {
+    > .form_grp {
+      width: 25%;
+      flex-basis: 25%;
+      max-width: 25%;
+      @include screen('mobile') {
+        width: 50%;
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      @include screen('xs_mobile') {
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    > input,
+    > select,
+    > label {
+      width: calc(25% - 0.6em);
+      flex-basis: calc(25% - 0.6em);
+      max-width: calc(25% - 0.6em);
+      @include screen('xs_mobile') {
+        width: calc(100% - 0.6em);
+        flex-basis: calc(100% - 0.6em);
+        max-width: calc(100% - 0.6em);
+      }
+    }
+  }
   // .form_col-2-2-2-2-2-2 {
   //     >.form_grp {
   //         width: (100% / 6);

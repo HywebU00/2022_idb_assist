@@ -4434,6 +4434,128 @@ select::-ms-expand {
   border-bottom: none;
   margin-bottom: 0;
 }
+.flex-form [class*=form_col] {
+  flex-basis: 100%;
+  max-width: 100%;
+  align-items: flex-start;
+  position: relative;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+.flex-form [class*=form_col] > .form_grp {
+  border-bottom: 0;
+  padding-top: 0;
+}
+.flex-form [class*=form_col] label {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+@media screen and (max-width: 767px) {
+  .flex-form [class*=form_col] {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+}
+.flex-form .form_col-6-6 > .form_grp {
+  width: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+@media screen and (max-width: 575px) {
+  .flex-form .form_col-6-6 > .form_grp {
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+.flex-form .form_col-6-6 > input,
+.flex-form .form_col-6-6 > select,
+.flex-form .form_col-6-6 > label {
+  width: calc(50% - 0.6em);
+  flex-basis: calc(50% - 0.6em);
+  max-width: calc(50% - 0.6em);
+}
+@media screen and (max-width: 575px) {
+  .flex-form .form_col-6-6 > input,
+  .flex-form .form_col-6-6 > select,
+  .flex-form .form_col-6-6 > label {
+    width: calc(100% - 0.6em);
+    flex-basis: calc(100% - 0.6em);
+    max-width: calc(100% - 0.6em);
+  }
+}
+.flex-form .form_col-4-4-4 > .form_grp {
+  width: 33.333%;
+  flex-basis: 33.333%;
+  max-width: 33.333%;
+}
+@media screen and (max-width: 575px) {
+  .flex-form .form_col-4-4-4 > .form_grp {
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+.flex-form .form_col-4-4-4 > input,
+.flex-form .form_col-4-4-4 > select,
+.flex-form .form_col-4-4-4 > label {
+  width: calc(33.333% - 0.6em);
+  flex-basis: calc(33.333% - 0.6em);
+  max-width: calc(33.333% - 0.6em);
+}
+@media screen and (max-width: 575px) {
+  .flex-form .form_col-4-4-4 > input,
+  .flex-form .form_col-4-4-4 > select,
+  .flex-form .form_col-4-4-4 > label {
+    width: calc(100% - 0.6em);
+    flex-basis: calc(100% - 0.6em);
+    max-width: calc(100% - 0.6em);
+  }
+}
+.flex-form .form_col-3-3-3-3 > .form_grp {
+  width: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+@media screen and (max-width: 767px) {
+  .flex-form .form_col-3-3-3-3 > .form_grp {
+    width: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .flex-form .form_col-3-3-3-3 > .form_grp {
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+.flex-form .form_col-3-3-3-3 > input,
+.flex-form .form_col-3-3-3-3 > select,
+.flex-form .form_col-3-3-3-3 > label {
+  width: calc(25% - 0.6em);
+  flex-basis: calc(25% - 0.6em);
+  max-width: calc(25% - 0.6em);
+}
+@media screen and (max-width: 575px) {
+  .flex-form .form_col-3-3-3-3 > input,
+  .flex-form .form_col-3-3-3-3 > select,
+  .flex-form .form_col-3-3-3-3 > label {
+    width: calc(100% - 0.6em);
+    flex-basis: calc(100% - 0.6em);
+    max-width: calc(100% - 0.6em);
+  }
+}
 .flex-form .btn_grp {
   justify-content: center;
 }
