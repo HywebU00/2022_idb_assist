@@ -107,7 +107,7 @@ img {
 }
 
 .Flex-set .col {
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 .Flex-set .col p {
   color: rgba(255, 255, 255, 0.5);
