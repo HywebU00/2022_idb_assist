@@ -8479,17 +8479,17 @@ h2.title {
 }
 .cp table {
   background: #fff;
-  font-size: 1rem !important;
+  font-size: 1rem;
 }
 .cp table p,
 .cp table span {
-  font-size: 1rem !important;
+  font-size: 1rem;
 }
 .cp table p p,
 .cp table p span,
 .cp table span p,
 .cp table span span {
-  font-size: 1rem !important;
+  font-size: 1rem;
 }
 .cp img.float_left {
   float: left;
