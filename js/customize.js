@@ -18,7 +18,7 @@ $(function () {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     //fade: true,
     lazyLoaded: true,
@@ -28,6 +28,7 @@ $(function () {
     // pauseOnHover: false,
     // centerMode: true,
     // centerPadding: '100px',
+
     customPaging: function (slider, i) {
       var title = $(slider.$slides[i]).find('img').attr('alt').trim();
       return $('<button type="button" aria-label="' + title + '"/>').text(title);
@@ -264,6 +265,69 @@ $(function () {
         }
         e.preventDefault();
       });
+  });
+
+  // 控制自動播放的變數
+  let isPlaying = true;
+
+  // 處理暫停/播放按鈕點擊
+  $('#mpSlider-toggle-autoplay').click(function () {
+    if (isPlaying) {
+      // 暫停播放
+      $('.mpSlider').slick('slickPause');
+      $(this).text('開始播放').attr('aria-label', '開始自動播放輪播').attr('aria-pressed', 'true').removeClass('slickPause').addClass('slickPlay');
+    } else {
+      // 開始播放
+      $('.mpSlider').slick('slickPlay');
+      $(this).text('暫停播放').attr('aria-label', '暫停自動播放輪播').attr('aria-pressed', 'false').removeClass('slickPlay').addClass('slickPause');
+    }
+    isPlaying = !isPlaying;
+  });
+
+  // 鍵盤控制
+  $('.mpSlider').on('keydown', function (e) {
+    switch (e.key) {
+      case 'ArrowLeft':
+        $(this).slick('slickPrev');
+        break;
+      case 'ArrowRight':
+        $(this).slick('slickNext');
+        break;
+      case 'Space':
+        $('#toggle-autoplay').click();
+        e.preventDefault();
+        break;
+    }
+  });
+
+  // 處理暫停/播放按鈕點擊
+  $('#adSlider-toggle-autoplay').click(function () {
+    if (isPlaying) {
+      // 暫停播放
+      $('.adSlider').slick('slickPause');
+      $(this).text('開始播放').attr('aria-label', '開始自動播放輪播').attr('aria-pressed', 'true').removeClass('slickPause').addClass('slickPlay');
+    } else {
+      // 開始播放
+      $('.adSlider').slick('slickPlay');
+      $(this).text('暫停播放').attr('aria-label', '暫停自動播放輪播').attr('aria-pressed', 'false').removeClass('slickPlay').addClass('slickPause');
+    }
+    isPlaying = !isPlaying;
+  });
+
+  // 鍵盤控制
+  $('.adSlider').on('keydown', function (e) {
+    switch (e.key) {
+      case 'ArrowLeft':
+        $(this).slick('slickPrev');
+        break;
+      case 'ArrowRight':
+        $(this).slick('slickNext');
+        break;
+      case 'Space':
+        $('#toggle-autoplay').click();
+        e.preventDefault();
+        break;
+    }
   });
 
   $('.collapseBtn').click(function () {

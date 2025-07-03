@@ -992,7 +992,7 @@ a:focus-visible {
 }
 
 .main .accesskey {
-  top: -32px;
+  top: 0;
 }
 .main.innerpage .accesskey {
   top: auto;
@@ -6212,9 +6212,39 @@ table tr td.counseling td p {
   background: #10574e;
 }
 
+.slick-control {
+  font-size: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 99;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 22px;
+}
+.slick-control.slickPause {
+  background: #188275 url(../images/icon_pause.svg) center center no-repeat;
+  background-size: 24px;
+}
+.slick-control.slickPlay {
+  background: #188275 url(../images/icon_play.svg) center center no-repeat;
+  background-size: 24px;
+}
+
+.mpSlider-container {
+  position: relative;
+  width: 100%;
+}
+.mpSlider-container .slick-control {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .mpSlider {
   width: 100%;
   padding-bottom: 4em;
+  position: relative;
   position: relative;
   min-height: 1px;
   padding-left: 0;
@@ -6386,6 +6416,10 @@ table tr td.counseling td p {
   .news_slider .slick-next {
     right: -20px;
   }
+}
+
+.ad .slick-control {
+  margin: 0;
 }
 
 .adSlider {

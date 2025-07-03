@@ -87,10 +87,10 @@
           </nav>
           <!-- menu End -->
         </div>
-        <div class="floatLink">
+        <!-- <div class="floatLink">
           <a href="#"><img src="images/floatLink.png" alt="" /></a>
           <button type="button" name="收合連結" aria-label="連結展開/收合" class="collapseBtn"></button>
-        </div>
+        </div> -->
       </header>
       <!-- header End -->
       <!-- <div class="covid">
@@ -111,18 +111,25 @@
       <!-- main Start -->
       <div id="center" class="main">
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-        <div class="mpSlider">
-          <div class="img-container">
-            <a href="#" title="">
-              <img src="images/mpbanner00.jpg" class="cover" alt="圖說1" />
-            </a>
-          </div>
-          <div class="img-container">
-            <a href="#" title="">
-              <img src="images/mpbanner02.jpg" class="cover" alt="圖說1" />
-            </a>
+        <!-- 20250703 mpSlider外增加一層div -->
+        <div class="mpSlider-container">
+          <!-- 20250703 新增輪播控制按鈕 -->
+          <button id="mpSlider-toggle-autoplay" class="slick-control slickPause" aria-label="暫停自動播放輪播" aria-pressed="false">暫停播放</button>
+
+          <div class="mpSlider">
+            <div class="img-container">
+              <a href="#" title="">
+                <img src="images/mpbanner00.jpg" class="cover" alt="圖說1" />
+              </a>
+            </div>
+            <div class="img-container">
+              <a href="#" title="">
+                <img src="images/mpbanner02.jpg" class="cover" alt="圖說1" />
+              </a>
+            </div>
           </div>
         </div>
+        <!-- mpslider-container End -->
         <section class="news">
           <div class="container">
             <h2 class="title_h2">最新訊息</h2>
@@ -306,6 +313,8 @@
         </section>
         <section class="ad">
           <div class="container">
+            <!-- 20250703 新增輪播控制按鈕 -->
+            <button id="adSlider-toggle-autoplay" class="slick-control slickPause" aria-label="暫停自動播放輪播" aria-pressed="false">暫停播放</button>
             <div class="adSlider">
               <div class="itemBlock">
                 <a href="#" title="">
